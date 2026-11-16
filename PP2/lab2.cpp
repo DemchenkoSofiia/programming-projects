@@ -34,7 +34,7 @@ double readNumber(const string& name) {
 	double value = 0;
 	input >> value;
 	if (input.fail() || !input.eof()) {
-		throw invalid_argument("Input for " + name + " is not a number.");
+		throw invalid_argument("Wrong input for " + name);
 	}
 	return value;
 }
